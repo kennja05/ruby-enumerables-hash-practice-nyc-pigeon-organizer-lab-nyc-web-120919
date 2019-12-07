@@ -18,7 +18,8 @@ def nyc_pigeon_organizer(data)
          final_hash[n] = {}
        end 
        #binding.pry 
-       if !final_hash[n][keys] 
+       if !final_hash[n][keys]
+         #each value for keys: color, gender, lives is in the form of an array. only color (for some) has multiple elements
          final_hash[n][keys] = []
        end
        #binding.pry 
